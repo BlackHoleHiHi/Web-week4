@@ -1,0 +1,9 @@
+version: '3'
+services:
+  mongodb:
+    image: mongo:latest
+    container_name: student-mongo-new
+    ports:
+      - "27018:27017"
+    volumes:
+      - ./mongodbdata:/data/db
